@@ -9,5 +9,6 @@ target 'Blaze' do
   pod 'GoogleSignIn'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end
