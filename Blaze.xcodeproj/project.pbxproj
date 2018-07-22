@@ -12,9 +12,12 @@
 		41B1DE812104B10800331EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE7F2104B10800331EA3 /* Main.storyboard */; };
 		41B1DE832104B10A00331EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE822104B10A00331EA3 /* Assets.xcassets */; };
 		41B1DE862104B10A00331EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE842104B10A00331EA3 /* LaunchScreen.storyboard */; };
+		41B1DE8E2104B21E00331EA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */; };
+		AE4DC5887E20080C65F9DF68 /* Pods_Blaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60455344454B9AE81D0F403 /* Pods_Blaze.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28846562A855345E0B7343BF /* Pods-Blaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blaze/Pods-Blaze.release.xcconfig"; sourceTree = "<group>"; };
 		41B1DE782104B10800331EA3 /* Blaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B1DE7B2104B10800331EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B1DE7D2104B10800331EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		41B1DE822104B10A00331EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41B1DE852104B10A00331EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41B1DE872104B10A00331EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB444696EB7CA1BFEBA8BE87 /* Pods-Blaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blaze/Pods-Blaze.debug.xcconfig"; sourceTree = "<group>"; };
+		D60455344454B9AE81D0F403 /* Pods_Blaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4DC5887E20080C65F9DF68 /* Pods_Blaze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				41B1DE7A2104B10800331EA3 /* Blaze */,
 				41B1DE792104B10800331EA3 /* Products */,
+				BB450F649C82D9C8ECCC018B /* Pods */,
+				5EE357CABDC68EBB0AA96019 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				41B1DE822104B10A00331EA3 /* Assets.xcassets */,
 				41B1DE842104B10A00331EA3 /* LaunchScreen.storyboard */,
 				41B1DE872104B10A00331EA3 /* Info.plist */,
+				41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */,
 			);
 			path = Blaze;
+			sourceTree = "<group>";
+		};
+		5EE357CABDC68EBB0AA96019 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D60455344454B9AE81D0F403 /* Pods_Blaze.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB450F649C82D9C8ECCC018B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB444696EB7CA1BFEBA8BE87 /* Pods-Blaze.debug.xcconfig */,
+				28846562A855345E0B7343BF /* Pods-Blaze.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41B1DE8A2104B10A00331EA3 /* Build configuration list for PBXNativeTarget "Blaze" */;
 			buildPhases = (
+				41E4E5AB3BA06D5B51D08D81 /* [CP] Check Pods Manifest.lock */,
 				41B1DE742104B10800331EA3 /* Sources */,
 				41B1DE752104B10800331EA3 /* Frameworks */,
 				41B1DE762104B10800331EA3 /* Resources */,
+				AC64FCA955F85875D5DE6DE4 /* [CP] Embed Pods Frameworks */,
+				63989EAE4C96AB311554B64C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B1DE862104B10A00331EA3 /* LaunchScreen.storyboard in Resources */,
+				41B1DE8E2104B21E00331EA3 /* GoogleService-Info.plist in Resources */,
 				41B1DE832104B10A00331EA3 /* Assets.xcassets in Resources */,
 				41B1DE812104B10800331EA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41E4E5AB3BA06D5B51D08D81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blaze-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63989EAE4C96AB311554B64C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Blaze/Pods-Blaze-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blaze/Pods-Blaze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC64FCA955F85875D5DE6DE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Blaze/Pods-Blaze-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blaze/Pods-Blaze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41B1DE742104B10800331EA3 /* Sources */ = {
@@ -278,6 +372,7 @@
 		};
 		41B1DE8B2104B10A00331EA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB444696EB7CA1BFEBA8BE87 /* Pods-Blaze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ravitripathi.Blaze;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ravitripathi.blaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +391,7 @@
 		};
 		41B1DE8C2104B10A00331EA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28846562A855345E0B7343BF /* Pods-Blaze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ravitripathi.Blaze;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ravitripathi.blaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

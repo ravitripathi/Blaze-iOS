@@ -1,0 +1,6 @@
+framework module Pods_Blaze {
+  umbrella header "Pods-Blaze-umbrella.h"
+
+  export *
+  module * { export * }
+}
