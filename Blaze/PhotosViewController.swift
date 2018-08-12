@@ -20,7 +20,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView = UITableView(frame: view.bounds, style: UITableViewStyle.grouped)
+        self.tableView = UITableView(frame: view.bounds, style: UITableViewStyle.plain)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.register(UINib(nibName: "PhotoViewCell", bundle: nil), forCellReuseIdentifier: "PhotoViewCell")// CustomTableViewCell.s
@@ -32,23 +32,26 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         // Listen for new comments in the Firebase database
         let uid = Auth.auth().currentUser!.uid
         ref = Database.database().reference().child("users").child(uid)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+        
+        
         ref.observe(.childAdded, with: { (snapshot) -> Void in
+            
             self.photoUrlDataSource.append(snapshot)
-//            self.tableView.insertRows(at: [IndexPath(row: self.photoUrlDataSource.count-1, section: 1)], with: UITableViewRowAnimation.automatic)
             self.tableView?.reloadData()
+            
+            //            self.tableView.insertRows(at: [IndexPath(row: self.photoUrlDataSource.count-1, section: 1)], with: UITableViewRowAnimation.automatic)
+            
         })
         // Listen for deleted comments in the Firebase database
         ref.observe(.childRemoved, with: { (snapshot) -> Void in
             let index = self.indexOfMessage(snapshot)
             self.photoUrlDataSource.remove(at: index)
-//            self.tableView.deleteRows(at: [IndexPath(row: index, section: 1)], with: UITableViewRowAnimation.automatic)
+            //            self.tableView.deleteRows(at: [IndexPath(row: index, section: 1)], with: UITableViewRowAnimation.automatic)
             self.tableView?.reloadData()
         })
         
     }
+    
     
     func indexOfMessage(_ snapshot: DataSnapshot) -> Int {
         var index = 0
@@ -74,7 +77,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250.0
+        return 100.0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -90,6 +93,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         }
        return UITableViewCell()
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ImageViewController()
+        vc.imageUrl = self.photoUrlDataSource[indexPath.row].value as? String
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

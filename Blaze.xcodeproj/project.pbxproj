@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		410B70732120D5F30083103A /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B70712120D5F30083103A /* PhotoViewCell.swift */; };
 		410B70742120D5F30083103A /* PhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410B70722120D5F30083103A /* PhotoViewCell.xib */; };
+		417CCBDA2120E50C009B38B2 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CCBD82120E50C009B38B2 /* ImageViewController.swift */; };
+		417CCBDB2120E50C009B38B2 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417CCBD92120E50C009B38B2 /* ImageViewController.xib */; };
 		41B1DE7C2104B10800331EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE7B2104B10800331EA3 /* AppDelegate.swift */; };
 		41B1DE7E2104B10800331EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE7D2104B10800331EA3 /* ViewController.swift */; };
 		41B1DE812104B10800331EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE7F2104B10800331EA3 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		28846562A855345E0B7343BF /* Pods-Blaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blaze/Pods-Blaze.release.xcconfig"; sourceTree = "<group>"; };
 		410B70712120D5F30083103A /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
 		410B70722120D5F30083103A /* PhotoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewCell.xib; sourceTree = "<group>"; };
+		417CCBD82120E50C009B38B2 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		417CCBD92120E50C009B38B2 /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		41B1DE782104B10800331EA3 /* Blaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B1DE7B2104B10800331EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B1DE7D2104B10800331EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				41B1DE8F2104F39A00331EA3 /* PhotosViewController.swift */,
 				410B70712120D5F30083103A /* PhotoViewCell.swift */,
 				410B70722120D5F30083103A /* PhotoViewCell.xib */,
+				417CCBD82120E50C009B38B2 /* ImageViewController.swift */,
+				417CCBD92120E50C009B38B2 /* ImageViewController.xib */,
 			);
 			path = Blaze;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 				41B1DE8E2104B21E00331EA3 /* GoogleService-Info.plist in Resources */,
 				410B70742120D5F30083103A /* PhotoViewCell.xib in Resources */,
 				41B1DE832104B10A00331EA3 /* Assets.xcassets in Resources */,
+				417CCBDB2120E50C009B38B2 /* ImageViewController.xib in Resources */,
 				41B1DE812104B10800331EA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +252,7 @@
 			files = (
 				41B1DE7E2104B10800331EA3 /* ViewController.swift in Sources */,
 				41B1DE7C2104B10800331EA3 /* AppDelegate.swift in Sources */,
+				417CCBDA2120E50C009B38B2 /* ImageViewController.swift in Sources */,
 				41B1DE902104F39A00331EA3 /* PhotosViewController.swift in Sources */,
 				410B70732120D5F30083103A /* PhotoViewCell.swift in Sources */,
 			);
