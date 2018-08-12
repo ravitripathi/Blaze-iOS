@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410B70732120D5F30083103A /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B70712120D5F30083103A /* PhotoViewCell.swift */; };
+		410B70742120D5F30083103A /* PhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410B70722120D5F30083103A /* PhotoViewCell.xib */; };
 		41B1DE7C2104B10800331EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE7B2104B10800331EA3 /* AppDelegate.swift */; };
 		41B1DE7E2104B10800331EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE7D2104B10800331EA3 /* ViewController.swift */; };
 		41B1DE812104B10800331EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE7F2104B10800331EA3 /* Main.storyboard */; };
@@ -14,12 +16,13 @@
 		41B1DE862104B10A00331EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE842104B10A00331EA3 /* LaunchScreen.storyboard */; };
 		41B1DE8E2104B21E00331EA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */; };
 		41B1DE902104F39A00331EA3 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE8F2104F39A00331EA3 /* PhotosViewController.swift */; };
-		41B1DE932104F59A00331EA3 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE912104F59A00331EA3 /* PhotoTableViewCell.swift */; };
 		AE4DC5887E20080C65F9DF68 /* Pods_Blaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60455344454B9AE81D0F403 /* Pods_Blaze.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28846562A855345E0B7343BF /* Pods-Blaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blaze/Pods-Blaze.release.xcconfig"; sourceTree = "<group>"; };
+		410B70712120D5F30083103A /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		410B70722120D5F30083103A /* PhotoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewCell.xib; sourceTree = "<group>"; };
 		41B1DE782104B10800331EA3 /* Blaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B1DE7B2104B10800331EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B1DE7D2104B10800331EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +32,6 @@
 		41B1DE872104B10A00331EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41B1DE8F2104F39A00331EA3 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
-		41B1DE912104F59A00331EA3 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		AB444696EB7CA1BFEBA8BE87 /* Pods-Blaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blaze/Pods-Blaze.debug.xcconfig"; sourceTree = "<group>"; };
 		D60455344454B9AE81D0F403 /* Pods_Blaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,7 +77,8 @@
 				41B1DE872104B10A00331EA3 /* Info.plist */,
 				41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */,
 				41B1DE8F2104F39A00331EA3 /* PhotosViewController.swift */,
-				41B1DE912104F59A00331EA3 /* PhotoTableViewCell.swift */,
+				410B70712120D5F30083103A /* PhotoViewCell.swift */,
+				410B70722120D5F30083103A /* PhotoViewCell.xib */,
 			);
 			path = Blaze;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				41B1DE862104B10A00331EA3 /* LaunchScreen.storyboard in Resources */,
 				41B1DE8E2104B21E00331EA3 /* GoogleService-Info.plist in Resources */,
+				410B70742120D5F30083103A /* PhotoViewCell.xib in Resources */,
 				41B1DE832104B10A00331EA3 /* Assets.xcassets in Resources */,
 				41B1DE812104B10800331EA3 /* Main.storyboard in Resources */,
 			);
@@ -239,10 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41B1DE932104F59A00331EA3 /* PhotoTableViewCell.swift in Sources */,
 				41B1DE7E2104B10800331EA3 /* ViewController.swift in Sources */,
 				41B1DE7C2104B10800331EA3 /* AppDelegate.swift in Sources */,
 				41B1DE902104F39A00331EA3 /* PhotosViewController.swift in Sources */,
+				410B70732120D5F30083103A /* PhotoViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

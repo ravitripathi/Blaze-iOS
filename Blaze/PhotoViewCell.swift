@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PhotoViewCell: UITableViewCell {
 
+    @IBOutlet var contentImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    func loadImage(urlString: String?) {
+        if let urlString = urlString, let url = URL(string: urlString), let _ = contentImageView {
+            contentImageView.kf.setImage(with: url) 
+        }
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+        super.setSelected(false, animated: animated)
         // Configure the view for the selected state
     }
+
     
 }
