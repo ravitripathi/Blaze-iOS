@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseAuth
 import Kingfisher
 
-class PhotosTableViewController: UITableViewController {
+class PhotosViewController: UITableViewController {
     
     var photoUrlDataSource: Array<DataSnapshot> = []
     var ref: DatabaseReference!

@@ -13,7 +13,7 @@
 		41B1DE832104B10A00331EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE822104B10A00331EA3 /* Assets.xcassets */; };
 		41B1DE862104B10A00331EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE842104B10A00331EA3 /* LaunchScreen.storyboard */; };
 		41B1DE8E2104B21E00331EA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */; };
-		41B1DE902104F39A00331EA3 /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE8F2104F39A00331EA3 /* PhotosTableViewController.swift */; };
+		41B1DE902104F39A00331EA3 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE8F2104F39A00331EA3 /* PhotosViewController.swift */; };
 		41B1DE932104F59A00331EA3 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1DE912104F59A00331EA3 /* PhotoTableViewCell.swift */; };
 		AE4DC5887E20080C65F9DF68 /* Pods_Blaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60455344454B9AE81D0F403 /* Pods_Blaze.framework */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 		41B1DE852104B10A00331EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41B1DE872104B10A00331EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		41B1DE8F2104F39A00331EA3 /* PhotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		41B1DE8F2104F39A00331EA3 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		41B1DE912104F59A00331EA3 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		AB444696EB7CA1BFEBA8BE87 /* Pods-Blaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blaze/Pods-Blaze.debug.xcconfig"; sourceTree = "<group>"; };
 		D60455344454B9AE81D0F403 /* Pods_Blaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +74,7 @@
 				41B1DE842104B10A00331EA3 /* LaunchScreen.storyboard */,
 				41B1DE872104B10A00331EA3 /* Info.plist */,
 				41B1DE8D2104B21E00331EA3 /* GoogleService-Info.plist */,
-				41B1DE8F2104F39A00331EA3 /* PhotosTableViewController.swift */,
+				41B1DE8F2104F39A00331EA3 /* PhotosViewController.swift */,
 				41B1DE912104F59A00331EA3 /* PhotoTableViewCell.swift */,
 			);
 			path = Blaze;
@@ -242,7 +242,7 @@
 				41B1DE932104F59A00331EA3 /* PhotoTableViewCell.swift in Sources */,
 				41B1DE7E2104B10800331EA3 /* ViewController.swift in Sources */,
 				41B1DE7C2104B10800331EA3 /* AppDelegate.swift in Sources */,
-				41B1DE902104F39A00331EA3 /* PhotosTableViewController.swift in Sources */,
+				41B1DE902104F39A00331EA3 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +390,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TWFBHPHN4Q;
 				INFOPLIST_FILE = Blaze/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.ravitripathi.blaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -406,7 +409,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TWFBHPHN4Q;
 				INFOPLIST_FILE = Blaze/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.ravitripathi.blaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

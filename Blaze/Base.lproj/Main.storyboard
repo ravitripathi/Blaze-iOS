@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="3366" y="438"/>
         </scene>
-        <!--Photos Table View Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="w3A-9J-2gL">
             <objects>
-                <tableViewController id="Zin-pJ-jsu" customClass="PhotosTableViewController" customModule="Blaze" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Zin-pJ-jsu" customClass="PhotosViewController" customModule="Blaze" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m5c-rR-r6h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
