@@ -10,6 +10,6 @@ target 'Blaze' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-  pod 'Kingfisher', '~> 4.0'
+  pod 'Kingfisher', '~> 5.0'
 
 end

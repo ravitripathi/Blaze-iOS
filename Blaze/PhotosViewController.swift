@@ -20,13 +20,13 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView = UITableView(frame: view.bounds, style: UITableViewStyle.plain)
+        self.tableView = UITableView(frame: view.bounds, style: UITableView.Style.plain)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.register(UINib(nibName: "PhotoViewCell", bundle: nil), forCellReuseIdentifier: "PhotoViewCell")// CustomTableViewCell.s
 //        tableView?.register(PhotoViewCell.self, forCellReuseIdentifier: "PhotoViewCell")
         tableView?.estimatedRowHeight = 44.0
-        tableView?.rowHeight = UITableViewAutomaticDimension
+        tableView?.rowHeight = UITableView.automaticDimension
         self.view.addSubview(tableView!)
         
         // Listen for new comments in the Firebase database
